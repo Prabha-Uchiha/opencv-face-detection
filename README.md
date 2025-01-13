@@ -31,7 +31,7 @@ The assets are downloaded from:
 
 Run the following command to start the application:
 
-```bash
+
 python face_detection.py
 
 
