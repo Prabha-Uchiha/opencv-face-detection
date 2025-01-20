@@ -36,33 +36,32 @@ python face_detection.py
 
 
 By default, it will use the webcam feed as input.
-To use a video file as input, provide the file path as a command-line argument:
-  --  python face_detection.py <path_to_video_file>
+
 3. Exit the Application
   Press the Esc key to exit the application.
 
-File Structure
+### File Structure
 .
 ├── face_detection.py        # Main Python script
 ├── deploy.prototxt          # Model architecture file (auto-downloaded)
 ├── res10_300x300_ssd_iter_140000_fp16.caffemodel  # Pre-trained weights (auto-downloaded)
 └── opencv_bootcamp_assets_12.zip  # Downloaded ZIP file (optional)
 
-How It Works
+### How It Works
 
 1.The script downloads the pre-trained model files if not already present.
 2.A 4D blob is created from each frame and passed to the model for inference.
 3.The model detects faces and outputs bounding box coordinates along with confidence scores.
 4.Detected faces are highlighted with bounding boxes, and inference time is displayed.
 
-Dependencies Installation
+### Dependencies Installation
 Install the required Python packages using pip:
    --pip install opencv-python
 (Optional: For additional functionalities, you may install opencv-contrib-python.)
 
-References
+### References
 OpenCV Documentation: https://docs.opencv.org/
 Pre-trained Caffe Model: https://github.com/opencv/opencv/blob/master/samples/dnn/face_detector
 
-License
+### License
 This project is open-source and available under the MIT License. You are free to use, modify, and distribute this project as per the license.
